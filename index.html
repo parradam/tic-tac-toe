@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <div id="modal__endGame" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h1 class="modal-heading"></h1>
+            <p class="modal-text"></p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="header">Tic tac toe</div>
+        <div id="main">
+            <div id="config">
+                <div id="players">
+                    <div id="p1" class="player">Player 1: <input type="text" placeholder="Enter a name!" id="p1__name"></div>
+                    <div id="p2" class="player">Player 2: <input type="text" placeholder="Enter a name!" id="p2__name"></div>
+                </div>
+                <div id="options">
+                    <div id="turn"><span id="turn__name"></span>'s turn (<span id="turn__marker"></span>)</div>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            
+            <div id="board">
+                <div class="row">
+                    <div id="0" class="cell"></div>
+                    <div id="1" class="cell"></div>
+                    <div id="2" class="cell"></div>
+                </div>
+                <div class="row">
+                    <div id="3" class="cell"></div>
+                    <div id="4" class="cell"></div>
+                    <div id="5" class="cell"></div>
+                </div>
+                <div class="row">
+                    <div id="6" class="cell"></div>
+                    <div id="7" class="cell"></div>
+                    <div id="8" class="cell"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://github.com/parradam" class="footer__link">
+                <img src="GitHub-Mark-32px.png" alt="GitHub Logomark">
+                <span class="footer__text">Check out my GitHub!</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
